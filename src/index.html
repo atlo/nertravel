@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" media="screen" href="<%= htmlWebpackPlugin.files.chunks.main.css %>">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet"> 
+  <!-- OPENGRAPH SHARE -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://nertravel.hu">
+  <meta property="og:title" content="A holtakra épített város">
+  <meta property="og:description" content="Temetők Budapesten a középkortól napjainkig">
+  <meta property="og:locale" content="hu_HU">
+  <meta property="og:image" content="">
+  <meta property="article:publisher" content="https://www.facebook.com/atlatszo">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@Atlatszo">
+  <meta name="twitter:image" content="">
+  <meta property="fb:app_id" content="345585816190715">
+  <meta name="description" content="">
+  <title>Nertravel</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="logo">
+        <img inline src="dist/<%= require('./images/nertravel_fej.svg') %>" alt="Nertravel">
+      </h1>
+    </header>
+    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo accusantium asperiores voluptatum soluta odio nemo praesentium, nulla dolorum eum repellendus quibusdam atque nesciunt, neque voluptatem reprehenderit quod ipsa ratione hic, minus aliquid voluptatibus! Natus facilis, tempora ratione fugit consectetur quas vitae quos obcaecati repellendus provident magnam nisi. Quisquam, cupiditate tempora.</p>
+    <div class="social-buttons">
+      <button type="button" class="social-button facebook"><img inline src="dist/<%= require('./images/facebook.svg') %>" alt="facebook megosztás"></button>
+      <button type="button" class="social-button tumblr"><img inline src="dist/<%= require('./images/tumblr.svg') %>" alt="tumblr megosztás"></button>
+      <button type="button" class="social-button twitter"><img inline src="dist/<%= require('./images/twitter.svg') %>" alt="twitter megosztás"></button>
+    </div>
+    <div class="inline">
+      <div class="plane">
+        <p>A XXXX jelzésű repülőgép helyzete:</p>
+        <div class="img-container">
+          <img src="dist/<%= require('./images/repulo.svg') %>" alt="repülő">
+        </div>
+        <!-- <p class="highlighted date">2018. 11. 02.</p> -->
+        <select class="form-control choices__input is-hidden" 
+                name="choices-single-remote-fetch" id="choices-single-remote-fetch" 
+                tabindex="-1" aria-hidden="true" data-choice="active">
+          <option value="Budapest" selected="">2018. 11. 01. 06:30</option>
+          <option value="Bukarest">2018. 11. 01. 12:10</option>
+          <option value="Moszkva">2018. 11. 21. 07:40</option>
+          <option value="Washington">2018. 11. 24. 22:22</option>
+        </select>
+        <button class="date-select choices__list choices__list--single"><img inline src="dist/<%= require('./images/arrow.svg') %>" alt="nyíl"> válassz dátumot</button>
+        <br>
+        <p class="highlighted place">Budapest</p>
+      </div>
+      <div class="yacht">
+        <p>A XXXX jelzésű jacht helyzete:</p>
+        <div class="img-container">
+          <img src="dist/<%= require('./images/jacht.svg') %>" alt="yacht">
+        </div>
+        <p class="highlighted date">2018. 11. 02.</p>
+        <br>
+        <p class="highlighted place">Budapest</p>
+      </div>
+    </div>
+  </div>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48920123-31"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-48920123-31');
+  </script>
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+</html>

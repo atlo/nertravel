@@ -35,32 +35,54 @@
       <button type="button" class="social-button twitter"><img inline src="dist/<%= require('./images/twitter.svg') %>" alt="twitter megosztás"></button>
     </div>
     <div class="inline">
-      <div class="plane">
+      <div class="vehicle plane">
         <p>A XXXX jelzésű repülőgép helyzete:</p>
         <div class="img-container">
           <img src="dist/<%= require('./images/repulo.svg') %>" alt="repülő">
         </div>
         <!-- <p class="highlighted date">2018. 11. 02.</p> -->
         <select class="form-control choices__input is-hidden" 
-                name="choices-single-remote-fetch" id="choices-single-remote-fetch" 
+                name="choices-single-remote-fetch" id="plane-choices-single-remote-fetch" 
                 tabindex="-1" aria-hidden="true" data-choice="active">
-          <option value="Budapest" selected="">2018. 11. 01. 06:30</option>
-          <option value="Bukarest">2018. 11. 01. 12:10</option>
-          <option value="Moszkva">2018. 11. 21. 07:40</option>
-          <option value="Washington">2018. 11. 24. 22:22</option>
+          <option value="Zürich-Budapest-Bécs">2018.10.27.</option>
+          <option value="Budapest-Zürich">2018.10.25.</option>
+          <option value="London-Budapest">2018.10.05.</option>
+          <option value="Budapest-London">2018.10.04.</option>
+          <option value="London-Budapest">2018.09.25.</option>
+          <option value="Budapest-London">2018.09.24.</option>
+          <option value="Budapest-Rijeka-Budapest">2018.09.20.</option>
+          <option value="Bécs-Budapest-Rijeka-Budapest-Rijeka">2018.09.17.</option>
+          <option value="Budapest-Bécs">2018.08.30.</option>
+          <option value="Budapest-Rijeka-Budapest">2018.08.25.</option>
         </select>
-        <button class="date-select choices__list choices__list--single"><img inline src="dist/<%= require('./images/arrow.svg') %>" alt="nyíl"> válassz dátumot</button>
+        <p class="call-to-action">
+          <img inline src="dist/<%= require('./images/arrow.svg') %>" alt="nyíl"> 
+          válassz dátumot
+        </p>
         <br>
-        <p class="highlighted place">Budapest</p>
+        <p class="highlighted place">Zürich-Budapest-Bécs</p>
       </div>
-      <div class="yacht">
+      <div class="vehicle yacht">
         <p>A XXXX jelzésű jacht helyzete:</p>
         <div class="img-container">
           <img src="dist/<%= require('./images/jacht.svg') %>" alt="yacht">
         </div>
-        <p class="highlighted date">2018. 11. 02.</p>
+        <select class="form-control choices__input is-hidden" 
+                name="choices-single-remote-fetch" id="yacht-choices-single-remote-fetch" 
+                tabindex="-1" aria-hidden="true" data-choice="active">
+          <option value="Rijeka">2018. 09. 20.</option>
+          <option value="Cres">2018. 09. 19.</option>
+          <option value="Opatija-Mali Losinj">2018. 09. 18.</option>
+          <option value="Rijeka-Opatija">2018. 09. 17.</option>
+          <option value="Brijuni-Rijeka">2018. 08. 24.</option>
+          <option value="Mali Losinj-Brijuni">2018. 08. 23.</option>
+          <option value="Mali Losinj">2018. 08. 22.</option>
+          <option value="Opatija">2018. 08. 21.</option>
+          <option value="Rijeka-Opatija">2018. 08. 20.</option>
+          <option value="Opatija-Rijeka">2018. 08. 17.</option>
+        </select>
         <br>
-        <p class="highlighted place">Budapest</p>
+        <p class="highlighted place">Rijeka</p>
       </div>
     </div>
   </div>

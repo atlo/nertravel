@@ -122,14 +122,14 @@ p.highlighted {
   text-transform: uppercase;
 }
 
-.date-select {
+.vehicle .call-to-action {
   position: relative;
   bottom: 3px;
+  display: inline-block;
   height: 30px;
   border: 0;
   background: none;
   color: black;
-  cursor: pointer;
   font-family: "PT Serif", serif;
   font-size: 14px;
   font-style: italic;
@@ -137,7 +137,7 @@ p.highlighted {
   line-height: 30px;
 }
 
-.date-select img {
+.call-to-action img {
   display: inline-block;
 }
 

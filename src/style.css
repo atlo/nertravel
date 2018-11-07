@@ -72,7 +72,7 @@ header img {
 .inline {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .inline > div {
@@ -109,6 +109,10 @@ header img {
   padding-left: 20px;
 }
 
+.yacht .img-container {
+  margin-bottom: 30px;
+}
+
 .plane {
   background: url('./images/kek_paca.png') top center no-repeat;
   padding-right: 20px;
@@ -122,23 +126,23 @@ p.highlighted {
   text-transform: uppercase;
 }
 
+.vehicle {
+  text-align: center;
+}
+
 .vehicle .call-to-action {
-  position: relative;
-  bottom: 3px;
-  display: inline-block;
-  height: 30px;
-  border: 0;
-  background: none;
+  padding-top: 0;
   color: black;
   font-family: "PT Serif", serif;
   font-size: 14px;
   font-style: italic;
   font-weight: bold;
   line-height: 30px;
+  padding-top: 0;
 }
 
 .call-to-action img {
-  display: inline-block;
+  display: none;
 }
 
 .choices {

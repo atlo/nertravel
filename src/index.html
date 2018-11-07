@@ -41,6 +41,10 @@
           <img src="dist/<%= require('./images/repulo.svg') %>" alt="repülő">
         </div>
         <!-- <p class="highlighted date">2018. 11. 02.</p> -->
+        <p class="call-to-action">
+          <img inline src="dist/<%= require('./images/arrow.svg') %>" alt="nyíl"> 
+          válassz dátumot
+        </p>
         <select class="form-control choices__input is-hidden" 
                 name="choices-single-remote-fetch" id="plane-choices-single-remote-fetch" 
                 tabindex="-1" aria-hidden="true" data-choice="active">
@@ -55,10 +59,6 @@
           <option value="Budapest-Bécs">2018.08.30.</option>
           <option value="Budapest-Rijeka-Budapest">2018.08.25.</option>
         </select>
-        <p class="call-to-action">
-          <img inline src="dist/<%= require('./images/arrow.svg') %>" alt="nyíl"> 
-          válassz dátumot
-        </p>
         <br>
         <p class="highlighted place">Zürich-Budapest-Bécs</p>
       </div>
@@ -67,6 +67,7 @@
         <div class="img-container">
           <img src="dist/<%= require('./images/jacht.svg') %>" alt="yacht">
         </div>
+        <p class="call-to-action"></p>
         <select class="form-control choices__input is-hidden" 
                 name="choices-single-remote-fetch" id="yacht-choices-single-remote-fetch" 
                 tabindex="-1" aria-hidden="true" data-choice="active">

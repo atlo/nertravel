@@ -25,7 +25,7 @@
   <div class="container">
     <header>
       <h1 class="logo">
-        <img inline src="dist/<%= require('./images/nertravel_fej.svg') %>" alt="Nertravel">
+        <img src="dist/<%= require('./images/nertravel_fej.svg') %>" alt="Nertravel">
       </h1>
     </header>
     <p class="description">
@@ -34,9 +34,9 @@
       A dátumokra kattintva megnézheted azt is, hogy merre jártak az elmúlt egy évben.
     </p>
     <div class="social-buttons">
-      <button type="button" class="social-button facebook"><img inline src="dist/<%= require('./images/facebook.svg') %>" alt="facebook megosztás"></button>
-      <button type="button" class="social-button tumblr"><img inline src="dist/<%= require('./images/tumblr.svg') %>" alt="tumblr megosztás"></button>
-      <button type="button" class="social-button twitter"><img inline src="dist/<%= require('./images/twitter.svg') %>" alt="twitter megosztás"></button>
+      <button type="button" class="social-button facebook"><img src="dist/<%= require('./images/facebook.svg') %>" alt="facebook megosztás"></button>
+      <button type="button" class="social-button tumblr"><img src="dist/<%= require('./images/tumblr.svg') %>" alt="tumblr megosztás"></button>
+      <button type="button" class="social-button twitter"><img src="dist/<%= require('./images/twitter.svg') %>" alt="twitter megosztás"></button>
     </div>
     <div class="inline">
       <div class="vehicle plane">
@@ -44,14 +44,11 @@
         <div class="img-container">
           <img src="dist/<%= require('./images/repulo.svg') %>" alt="repülő">
         </div>
-        <!-- <p class="highlighted date">2018. 11. 02.</p> -->
-        <p class="call-to-action">
-          <img inline src="dist/<%= require('./images/arrow.svg') %>" alt="nyíl"> 
-          válassz dátumot
-        </p>
+        <p class="call-to-action">válassz dátumot</p>
         <select class="form-control choices__input is-hidden" 
                 name="choices-single-remote-fetch" id="plane-choices-single-remote-fetch" 
                 tabindex="-1" aria-hidden="true" data-choice="active">
+          <option value="Lolwut">2018.11.08.</option>
           <option value="Zürich-Budapest-Bécs">2018.10.27.</option>
           <option value="Budapest-Zürich">2018.10.25.</option>
           <option value="London-Budapest">2018.10.05.</option>
@@ -71,7 +68,7 @@
         <div class="img-container">
           <img src="dist/<%= require('./images/jacht.svg') %>" alt="yacht">
         </div>
-        <p class="call-to-action"></p>
+        <p class="call-to-action">válassz dátumot</p>
         <select class="form-control choices__input is-hidden" 
                 name="choices-single-remote-fetch" id="yacht-choices-single-remote-fetch" 
                 tabindex="-1" aria-hidden="true" data-choice="active">

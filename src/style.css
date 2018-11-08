@@ -193,6 +193,19 @@ p.highlighted {
   top: 30px;
 }
 
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 350px;
+  margin: 60px auto;
+}
+
+footer img {
+  width: 125px;
+}
+
 @media (max-width: 1000px) {
   body {
     padding: 15px 0;

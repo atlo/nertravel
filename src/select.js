@@ -14,17 +14,24 @@ function updatePlace (select) {
 }
 
 function setCurrentLocation (select, firstOption) {
- const today = format(new Date(), 'YYYY.MM.DD.')
+  const today = format(new Date(), 'YYYY.MM.DD.')
+
   if (firstOption.text !== today) {
     const newOption = document.createElement('option')
     newOption.text = today
-    newOption.value = firstOption.value
+    newOption.value = formatLocation(firstOption.value)
     newOption.selected = true
 
     select.prepend(newOption)
+  } else {
+    firstOption.value = formatLocation(firstOption.value)
   }
 
   updatePlace(select)
+}
+
+function formatLocation (location) {
+  return location.split('-').pop()
 }
 
 setCurrentLocation(planeSelect, planeSelectOptions[0])

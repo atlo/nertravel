@@ -4,7 +4,8 @@
   "description": "",
   "main": "webpack.config.js",
   "dependencies": {
-    "choices.js": "^4.1.0"
+    "choices.js": "^4.1.0",
+    "date-fns": "^1.29.0"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",

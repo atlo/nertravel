@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" media="screen" href="<%= htmlWebpackPlugin.files.chunks.main.css %>">
-  <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet"> 
   <!-- OPENGRAPH SHARE -->
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://pomodo.ro">
@@ -20,6 +18,8 @@
   <meta property="fb:app_id" content="345585816190715">
   <meta name="description" content="">
   <title>Nertravel</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="<%= htmlWebpackPlugin.files.chunks.main.css %>">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet"> 
 </head>
 <body>
   <div class="container">
@@ -45,22 +45,9 @@
           <img src="dist/<%= require('./images/repulo.svg') %>" alt="repülő">
         </div>
         <p class="call-to-action">válassz dátumot</p>
-        <select class="form-control choices__input is-hidden" 
-                name="choices-single-remote-fetch" id="plane-choices-single-remote-fetch" 
-                tabindex="-1" aria-hidden="true" data-choice="active">
-          <option value="Zürich-Budapest-Bécs">2018.10.27.</option>
-          <option value="Budapest-Zürich">2018.10.25.</option>
-          <option value="London-Budapest">2018.10.05.</option>
-          <option value="Budapest-London">2018.10.04.</option>
-          <option value="London-Budapest">2018.09.25.</option>
-          <option value="Budapest-London">2018.09.24.</option>
-          <option value="Budapest-Rijeka-Budapest">2018.09.20.</option>
-          <option value="Bécs-Budapest-Rijeka-Budapest">2018.09.17.</option>
-          <option value="Budapest-Malaga-Budapest-Bécs">2018.08.30.</option>
-          <option value="Budapest-Rijeka-Budapest">2018.08.25.</option>
-        </select>
+        <input type="text" class="plane-datepicker">
         <br>
-        <p class="highlighted place">Zürich-Budapest-Bécs</p>
+        <p class="highlighted location"></p>
       </div>
       <div class="vehicle yacht">
         <p>A Lady Mrd jelzésű jacht helyzete:</p>
@@ -68,22 +55,9 @@
           <img src="dist/<%= require('./images/jacht.svg') %>" alt="yacht">
         </div>
         <p class="call-to-action">válassz dátumot</p>
-        <select class="form-control choices__input is-hidden" 
-                name="choices-single-remote-fetch" id="yacht-choices-single-remote-fetch" 
-                tabindex="-1" aria-hidden="true" data-choice="active">
-          <option value="Cres-Mali Losinj-Rijeka">2018. 09. 20.</option>
-          <option value="Cres">2018. 09. 19.</option>
-          <option value="Opatija-Mali Losinj">2018. 09. 18.</option>
-          <option value="Rijeka-Opatija">2018. 09. 17.</option>
-          <option value="Brijuni-Rijeka">2018. 08. 24.</option>
-          <option value="Mali Losinj-Brijuni">2018. 08. 23.</option>
-          <option value="Mali Losinj">2018. 08. 22.</option>
-          <option value="Opatija">2018. 08. 21.</option>
-          <option value="Rijeka-Opatija">2018. 08. 20.</option>
-          <option value="Opatija-Rijeka">2018. 08. 17.</option>
-        </select>
+        <input type="text" class="yacht-datepicker">
         <br>
-        <p class="highlighted place">Rijeka</p>
+        <p class="highlighted location"></p>
       </div>
     </div>
     <footer>
@@ -104,6 +78,10 @@
 
     gtag('config', 'UA-48920123-31');
   </script>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 </html>

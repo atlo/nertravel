@@ -1,3 +1,4 @@
+const webpack = require('webpack')
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
@@ -51,6 +52,10 @@ module.exports = {
     new HtmlWebpackInlineSVGPlugin(),
     new MiniCssExtractPlugin({
       filename: 'style.[contenthash].css'
+    }),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
     })
   ],
   devtool: 'inline-source-map'

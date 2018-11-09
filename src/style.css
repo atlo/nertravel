@@ -141,19 +141,21 @@ p.highlighted {
   display: none;
 }
 
-.choices {
+/* .choices {
   position: relative;
   display: inline-block;
   width: auto;
   margin-bottom: 10px;
-}
+}*/
 
-.choices__item.choices__item--selectable,
-.choices__list div {
+.plane-datepicker,
+.yacht-datepicker {
   display: inline-block;
-  width: auto;
+  width: 126px;
+  margin-bottom: 10px;
   background: #e6e6e6;
   border: 0;
+  color: black;
   font-family: 'PT Serif';
   font-size: 20px;
   font-weight: bold;
@@ -161,6 +163,7 @@ p.highlighted {
   padding: 5px 10px;
 }
 
+/*
 .choices__list div {
   display: block;
   padding: 0;
@@ -191,7 +194,7 @@ p.highlighted {
   display: block;
   position: absolute;
   top: 30px;
-}
+} */
 
 footer {
   display: flex;

@@ -447,7 +447,7 @@ export const yachtLocations = [
   },
   {
     date: '2018. 09. 19.',
-    location: 'Cres'
+    location: 'Mali Losinj-Cres'
   },
   {
     date: '2018. 09. 20.',

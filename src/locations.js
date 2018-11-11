@@ -160,11 +160,11 @@ export const planeLocations = [
     location: 'London-Budapest'
   },
   {
-    date: '2018. 10. 04',
+    date: '2018. 10. 04.',
     location: 'Budapest-London'
   },
   {
-    date: '2018. 10. 05',
+    date: '2018. 10. 05.',
     location: 'London-Budapest'
   },
   {
@@ -183,7 +183,7 @@ export const yachtLocations = [
   },
   {
     date: '2018. 02. 05.',
-    location: '2018. 02. 05.'
+    location: 'Tivat'
   },
   {
     date: '2018. 02. 06.',

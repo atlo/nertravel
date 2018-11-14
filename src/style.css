@@ -6,7 +6,7 @@
 
 body {
   font-family: 'PT Serif', serif;
-  padding: 50px 0 200px;
+  padding-top: 50px;
 }
 
 header {
@@ -109,6 +109,10 @@ header img {
   padding-left: 20px;
 }
 
+.yacht .img-container {
+  margin-bottom: 30px;
+}
+
 .plane {
   background: url('./images/kek_paca.png') top center no-repeat;
   padding-right: 20px;
@@ -141,17 +145,11 @@ p.highlighted {
   display: none;
 }
 
-/* .choices {
-  position: relative;
-  display: inline-block;
-  width: auto;
-  margin-bottom: 10px;
-}*/
-
 .plane-datepicker,
 .yacht-datepicker {
   display: inline-block;
   width: 126px;
+  height: 37px;
   margin-bottom: 10px;
   background: #e6e6e6;
   border: 0;
@@ -162,39 +160,6 @@ p.highlighted {
   padding-bottom: 0;
   padding: 5px 10px;
 }
-
-/*
-.choices__list div {
-  display: block;
-  padding: 0;
-}
-
-.choices__input.is-hidden {
-  display: none;
-}
-
-.choices[data-type*=select-one] .choices__inner {
-  padding-bottom: 0;
-}
-
-.choices[data-type*=select-one]:after {
-  display: none;
-}
-
-.choices__list.choices__list--dropdown {
-  display: none;
-  width: auto;
-}
-
-.choices__list.choices__list--dropdown.is-active {
-  display: block;
-}
-
-.choices__list.choices__list--dropdown.is-active {
-  display: block;
-  position: absolute;
-  top: 30px;
-} */
 
 footer {
   display: flex;
@@ -207,6 +172,12 @@ footer {
 
 footer img {
   width: 125px;
+}
+
+#map {
+  width: 100%;
+  height: 800px;
+  border-top: 2px solid black;
 }
 
 @media (max-width: 1000px) {

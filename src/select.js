@@ -2,6 +2,7 @@ import {format, eachDay} from 'date-fns'
 import 'air-datepicker'
 import '../node_modules/air-datepicker/dist/js/i18n/datepicker.hu'
 import {planeLocations, yachtLocations} from './locations'
+import {setMarkers, removeMarkers} from './map'
 
 const planeStartDate = new Date('2018-03-30')
 const yachtStartDate = new Date('2018-02-04')
@@ -9,8 +10,12 @@ const endDate = new Date()
 const dateFormat = 'YYYY. MM. DD.'
 const today = format(endDate, 'YYYY.MM.DD.')
 
-const planeLocation = document.querySelector('.plane .location')
-const yachtLocation = document.querySelector('.yacht .location')
+const planeLocationEl = document.querySelector('.plane .location')
+const yachtLocationEl = document.querySelector('.yacht .location')
+
+function lastListItem (location) {
+  return location.split(',').pop()
+}
 
 function populateLocations (startDate, locations) {
   return eachDay(startDate, endDate)
@@ -20,55 +25,58 @@ function populateLocations (startDate, locations) {
 
       if (location) {
         day.location = location.location
+        day.latitude = location.latitude
+        day.longitude = location.longitude
       }
       
       return day
     })
     .map((day, index, days) => {
       if (index) {
-        day.location = day.location || formatLocation(days[index - 1].location)
+        day.location = day.location || lastListItem(days[index - 1].location)
+        day.latitude = day.latitude || lastListItem(days[index - 1].latitude)
+        day.longitude = day.longitude || lastListItem(days[index - 1].longitude)
       }
 
       return day
     })
 }
 
+function findLocationByDate (locations, date) {
+  return locations.find(location => location.date === format(date, dateFormat))
+}
+
+function updateLocation (locationElement, location) {
+  locationElement.innerHTML = location.location || locationElement.innerHTML
+}
+
 const populatedPlaneLocations = populateLocations(planeStartDate, planeLocations)
 const populatedYachtLocations = populateLocations(yachtStartDate, yachtLocations)
 const planeDatePicker = $('.plane-datepicker')
-const yachtDatePicker = $('.yacht-datepicker')
+const yachtDatePicker = document.querySelector('.yacht-datepicker')
+window.lastPlaneLocation = populatedPlaneLocations[populatedPlaneLocations.length - 1]
+window.lastYachtLocation = populatedYachtLocations[populatedYachtLocations.length - 1]
 
-planeLocation.innerHTML = populatedPlaneLocations[populatedPlaneLocations.length - 1].location
-yachtLocation.innerHTML = populatedYachtLocations[populatedYachtLocations.length - 1].location
+planeLocationEl.innerHTML = lastPlaneLocation.location
+yachtLocationEl.innerHTML = lastYachtLocation.location
 planeDatePicker.val(today)
-yachtDatePicker.val(today)
+yachtDatePicker.innerHTML = today
 
 planeDatePicker.datepicker({
-  dateFormat: 'yyyy.mm.dd',
-  minDate: planeStartDate,
-  maxDate: endDate,
-  language: 'hu',
-  position: 'top right',
-  onSelect (df, date) {
-    planeLocation.innerHTML = populatedPlaneLocations
-      .find(location => location.date === format(date, dateFormat))
-      .location || planeLocation.innerHTML
-  } 
-})
-
-yachtDatePicker.datepicker({
   dateFormat: 'yyyy.mm.dd',
   minDate: yachtStartDate,
   maxDate: endDate,
   language: 'hu',
   position: 'top right',
   onSelect (df, date) {
-    yachtLocation.innerHTML = populatedYachtLocations
-      .find(location => location.date === format(date, dateFormat))
-      .location || yachtLocation.innerHTML
-  } 
-})
+    yachtDatePicker.innerHTML = df
+    const planeLocation = findLocationByDate(populatedPlaneLocations, date)
+    const yachtLocation = findLocationByDate(populatedYachtLocations, date)
 
-function formatLocation (location) {
-  return location.split('-').pop()
-}
+    updateLocation(planeLocationEl, planeLocation)
+    updateLocation(yachtLocationEl, yachtLocation)
+    removeMarkers()
+    setMarkers(planeLocation, yachtLocation)
+
+  }
+})

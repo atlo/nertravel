@@ -54,8 +54,7 @@
         <div class="img-container">
           <img src="dist/<%= require('./images/jacht.svg') %>" alt="yacht">
         </div>
-        <p class="call-to-action">válassz dátumot</p>
-        <input type="text" class="yacht-datepicker">
+        <div class="yacht-datepicker"></div>
         <br>
         <p class="highlighted location"></p>
       </div>
@@ -69,6 +68,11 @@
       </a>
     </footer>
   </div>
+  <div id="map"></div>
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPWlxfkTcBIlDqh4kkU2n1GY79sf0caBg&callback=initMap"
+  async defer></script>
+
   <!-- Global Site Tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48920123-31"></script>
   <script>
@@ -78,6 +82,5 @@
 
     gtag('config', 'UA-48920123-31');
   </script>
-  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 </html>

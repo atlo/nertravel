@@ -3,7 +3,7 @@ export const planeLocations = [
     date: '2018. 03. 30.',
     location: 'Montreal,Bécs',
     latitude: '45.5088,48.20833',
-    longitude: '–73.554,16.373064'
+    longitude: '-73.554,16.373064'
   },
   {
     date: '2018. 04. 03.',
@@ -15,13 +15,13 @@ export const planeLocations = [
     date: '2018. 04. 28.',
     location: 'Oberpfaffenhofen,Montreal',
     latitude: '48.0815,45.5088',
-    longitude: '11.2832,–73.554'
+    longitude: '11.2832,-73.554'
   },
   {
     date: '2018. 05. 01.',
     location: 'Montreal,Budapest',
     latitude: '45.5088,47.49833',
-    longitude: '–73.554,19.04083'
+    longitude: '-73.554,19.04083'
   },
   {
     date: '2018. 05. 03.',
@@ -99,19 +99,19 @@ export const planeLocations = [
     date: '2018. 06. 26.',
     location: 'Budapest,Lisszabon',
     latitude: '47.49833,38.71667',
-    longitude: '19.04083,–9.1952227'
+    longitude: '19.04083,-9.1952227'
   },
   {
     date: '2018. 06. 28.',
     location: 'Lisszabon,Faro',
     latitude: '38.71667,37.03333',
-    longitude: '–9.1952227,–7.91667'
+    longitude: '-9.1952227,-7.91667'
   },
   {
     date: '2018. 06. 30.',
     location: 'Faro,Salerno,Budapest',
     latitude: '37.03333,40.68056,47.49833',
-    longitude: '–7.91667,14.75972,19.04083'
+    longitude: '-7.91667,14.75972,19.04083'
   },
   {
     date: '2018. 07. 14.',
@@ -183,7 +183,7 @@ export const planeLocations = [
     date: '2018. 08. 15.',
     location: 'Budapest,Malaga,Budapest',
     latitude: '47.49833,36.720476,47.49833',
-    longitude: '19.04083,–4.412525,19.04083'
+    longitude: '19.04083,-4.412525,19.04083'
   },
   {
     date: '2018. 08. 18.',
@@ -201,7 +201,7 @@ export const planeLocations = [
     date: '2018. 08. 22.',
     location: 'Budapest,Malaga,Budapest',
     latitude: '47.49833,36.720476,47.49833',
-    longitude: '19.04083,–4.412525,19.04083'
+    longitude: '19.04083,-4.412525,19.04083'
   },
   {
     date: '2018. 08. 25.',
@@ -213,7 +213,7 @@ export const planeLocations = [
     date: '2018. 08. 30.',
     location: 'Budapest,Malaga,Budapest,Bécs',
     latitude: '47.49833,36.720476,47.49833,48.20833',
-    longitude: '19.04083,–4.412525,19.04083,16.373064'
+    longitude: '19.04083,-4.412525,19.04083,16.373064'
   },
   {
     date: '2018. 09. 17.',

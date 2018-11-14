@@ -44,7 +44,6 @@ function formatCoordinates (coordinates) {
   const latitudes = coordinates.latitude.split(',')
   const longitudes = coordinates.longitude.split(',')
 
-
   return latitudes.map((lat, index) => {
     return {
         lat: Number(lat),

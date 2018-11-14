@@ -47,8 +47,8 @@ function formatCoordinates (coordinates) {
 
   return latitudes.map((lat, index) => {
     return {
-        lat: parseFloat(lat),
-        lng: parseFloat(longitudes[index])
+        lat: Number(lat),
+        lng: Number(longitudes[index])
     }
   })
 }

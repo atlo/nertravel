@@ -262,6 +262,12 @@ export const planeLocations = [
     location: 'Zürich,Budapest,Bécs',
     latitude: '47.3686498,47.49833,48.20833',
     longitude: '8.5391825,19.04083,16.373064'
+  },
+  {
+    date: '2018. 11. 14.',
+    location: 'Bécs,Budapest,Belgrád',
+    latitude: '48.20833,47.49833,44.787197',
+    longitude: '16.373064,19.04083,20.457273'
   }
 ]
 export const yachtLocations = [

@@ -17,6 +17,10 @@ function lastListItem (location) {
   return location.split(',').pop()
 }
 
+function formatCities (location) {
+  return location.split(',').join('-')
+}
+
 function populateLocations (startDate, locations) {
   return eachDay(startDate, endDate)
     .map(day => ({date: format(day, dateFormat)}))
@@ -47,7 +51,8 @@ function findLocationByDate (locations, date) {
 }
 
 function updateLocation (locationElement, location) {
-  locationElement.innerHTML = location.location || locationElement.innerHTML
+  const newLocation = location.location || locationElement.innerHTML
+  locationElement.innerHTML = formatCities(newLocation)
 }
 
 const populatedPlaneLocations = populateLocations(planeStartDate, planeLocations)
@@ -57,8 +62,8 @@ const yachtDatePicker = document.querySelector('.yacht-datepicker')
 window.lastPlaneLocation = populatedPlaneLocations[populatedPlaneLocations.length - 1]
 window.lastYachtLocation = populatedYachtLocations[populatedYachtLocations.length - 1]
 
-planeLocationEl.innerHTML = lastPlaneLocation.location
-yachtLocationEl.innerHTML = lastYachtLocation.location
+planeLocationEl.innerHTML = formatCities(lastPlaneLocation.location)
+yachtLocationEl.innerHTML = formatCities(lastYachtLocation.location)
 planeDatePicker.val(today)
 yachtDatePicker.innerHTML = today
 

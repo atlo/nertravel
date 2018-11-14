@@ -50,9 +50,9 @@
    type="text/css"
    id="style2">
 	.st0{fill:#F15A24;}
-	.st1{fill:#1F2356;}
+	.st1{fill:#1722b1;}
 	.st2{fill:none;stroke:#F15A24;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st3{fill:none;stroke:#1F2356;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#1722b1;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;}
 </style>
 
 <path
@@ -60,7 +60,7 @@
    d="m 22.78,11.79 c 0,0 0.05,-1.36 0,-6.08 C 22.73,1 20.27,0 20.27,0 c 0,0 -2.46,1 -2.51,5.71 -0.05,4.71 0,6.08 0,6.08 L 0,21.53 v 2.1 l 7.96,-2.36 v 1.78 h 3.09 v -2.93 l 6.55,-1.89 c 0,0 0.58,13.52 1,15.72 -1.31,0.79 -3.98,2.31 -3.98,2.31 v 1.89 l 5.4,-1.26 h 0.52 l 5.4,1.26 v -1.89 c 0,0 -2.67,-1.52 -3.98,-2.31 0.42,-2.2 1,-15.72 1,-15.72 l 6.55,1.89 v 2.93 h 3.09 v -1.78 l 7.96,2.36 v -2.1 z"
    id="path12"
    inkscape:connector-curvature="0"
-   style="fill:#1f2356" />
+   style="fill:#1722b1" />
 
 
 

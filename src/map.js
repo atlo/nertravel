@@ -55,7 +55,7 @@ function formatCoordinates (coordinates) {
 function createMarkers (coordinates, isPlane = true) {
   const icon = isPlane ? planeIcon : yachtIcon
   const point = isPlane ? planePoint : yachtPoint
-  const lineColor = isPlane ? '#1f2356' : '#f15a24'
+  const lineColor = isPlane ? '#1722b1' : '#f15a24'
   
   coordinates.forEach(function(coordinate, index) {
     bounds.extend(coordinate)

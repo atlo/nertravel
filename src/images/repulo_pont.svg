@@ -50,9 +50,9 @@
    type="text/css"
    id="style2">
 	.st0{fill:#F15A24;}
-	.st1{fill:#1F2356;}
+	.st1{fill:#1722b1;}
 	.st2{fill:none;stroke:#F15A24;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st3{fill:none;stroke:#1F2356;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#1722b1;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;}
 </style>
 
 
@@ -63,7 +63,7 @@
    cy="5"
    r="5"
    id="circle16"
-   style="fill:#1f2356" />
+   style="fill:#1722b1" />
 
 
 </svg>

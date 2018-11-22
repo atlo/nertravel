@@ -274,6 +274,12 @@ export const planeLocations = [
     location: 'Budapest,Párizs',
     latitude: '47.49833,48.864716',
     longitude: '19.04083,2.349014'
+  },
+  {
+    date: '2018. 11. 22.',
+    location: 'Párizs,Budapest',
+    latitude: '48.864716,47.49833',
+    longitude: '2.349014,19.04083'
   }
 ]
 

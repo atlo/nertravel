@@ -105,7 +105,7 @@ function updateLocations () {
   updateLocation(planeLocationEl, planeLocations[planeLocations.length - 1])
 
   removeMarkers()
-  planeLocations.forEach(setMarkers)
+  planeLocations.forEach(location => setMarkers(location, true))
   yachtLocations.forEach(location => setMarkers(location, false))
 }
 
@@ -148,13 +148,11 @@ const datepickerFromElement = document.querySelector('.datepicker-input-from .da
 const datepickerToElement = document.querySelector('.datepicker-input-to .datepicker-inline')
 
 function showDatepickerFrom () {
-  console.log('showDatepickerFrom')
   datepickerFromElement.style.zIndex = 2
   datepickerToElement.style.zIndex = 1
 }
 
 function showDatepickerTo () {
-  console.log('showDatepickerTo')
   datepickerFromElement.style.zIndex = 1
   datepickerToElement.style.zIndex = 2
 }

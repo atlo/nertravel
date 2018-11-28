@@ -37,7 +37,7 @@ export function initMap() {
   bounds = new google.maps.LatLngBounds()
   map.fitBounds(bounds)
 
-  setMarkers([window.lastPlaneLocation])
+  setMarkers([window.lastPlaneLocation], true)
   setMarkers([window.lastYachtLocation], false)
 }
 
@@ -99,7 +99,7 @@ function createMarkers (coordinates, location, isPlane = true) {
   })
 }
 
-export function setMarkers (coordinates, isPlane = true) {
+export function setMarkers (coordinates, isPlane) {
   const formattedCoordinates = coordinates.map(formatCoordinates)
   formattedCoordinates.forEach((coordinate, index) => {
     createMarkers(coordinate, coordinates[index], isPlane)

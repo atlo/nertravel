@@ -38,14 +38,29 @@
       <button type="button" class="social-button tumblr"><img src="dist/<%= require('./images/tumblr.svg') %>" alt="tumblr megosztás"></button>
       <button type="button" class="social-button twitter"><img src="dist/<%= require('./images/twitter.svg') %>" alt="twitter megosztás"></button>
     </div>
-    <div class="inline">
+    <div class="inline vehicle-container">
       <div class="vehicle plane">
         <p>Az OE-LEM jelzésű repülőgép helyzete:</p>
         <div class="img-container">
           <img src="dist/<%= require('./images/repulo.svg') %>" alt="repülő">
         </div>
-        <p class="call-to-action">válassz dátumot</p>
-        <input type="text" class="plane-datepicker">
+        <div class="datepicker-button-container">
+          <p class="call-to-action">válassz dátumot</p>
+          <button class="datepicker-modal-button" type="button"></button>
+        </div>
+        <div class="datepicker-modal">
+          <div class="inline">
+            <div>
+              <p>Ettől</p>
+              <input type="text" class="datepicker-from">
+            </div>
+            <div>
+              <p>Eddig</p>
+              <input type="text" class="datepicker-to">
+            </div>
+          </div>
+          <button class="datepicker-search" type="button">Keresés</button>
+        </div>
         <br>
         <p class="highlighted location"></p>
       </div>
@@ -54,7 +69,6 @@
         <div class="img-container">
           <img src="dist/<%= require('./images/jacht.svg') %>" alt="yacht">
         </div>
-        <div class="yacht-datepicker"></div>
         <br>
         <p class="highlighted location"></p>
       </div>
@@ -69,6 +83,7 @@
     </footer>
   </div>
   <div id="map"></div>
+  <div class="modal-background"></div>
   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA123YaP73NYnvT_V8FWGntzY7dsN-47Ek&callback=initMap"
   async defer></script>

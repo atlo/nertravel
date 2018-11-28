@@ -37,13 +37,14 @@ export function initMap() {
   bounds = new google.maps.LatLngBounds()
   map.fitBounds(bounds)
 
-  setMarkers(window.lastPlaneLocation, window.lastYachtLocation)
+  setMarkers([window.lastPlaneLocation])
+  setMarkers([window.lastYachtLocation], false)
 }
 
 function formatCoordinates (coordinates) {
   const latitudes = coordinates.latitude.split(',')
   const longitudes = coordinates.longitude.split(',')
-
+  
   return latitudes.map((lat, index) => {
     return {
         lat: Number(lat),
@@ -52,7 +53,7 @@ function formatCoordinates (coordinates) {
   })
 }
 
-function createMarkers (coordinates, isPlane = true) {
+function createMarkers (coordinates, location, isPlane = true) {
   const icon = isPlane ? planeIcon : yachtIcon
   const point = isPlane ? planePoint : yachtPoint
   const lineColor = isPlane ? '#1722b1' : '#f15a24'
@@ -75,22 +76,35 @@ function createMarkers (coordinates, isPlane = true) {
     }
   })
 
-  lines.push(new google.maps.Polyline({
+  const line = new google.maps.Polyline({
     path: coordinates,
     strokeColor: lineColor,
     strokeOpacity: 1.0,
     strokeWeight: 4,
     map: map
-  }))
+  })
+
+  lines.push(line)
+  
+  const infoWindow = new google.maps.InfoWindow()
+
+  google.maps.event.addListener(line, 'mouseover', function(event) {
+    infoWindow.setPosition(event.latLng)
+    infoWindow.setContent(location.date)
+    infoWindow.open(map)
+  })
+  
+  google.maps.event.addListener(line, 'mouseout', function() {
+    infoWindow.close()
+  })
 }
 
-export function setMarkers (planeCoordinates, yachtCoordinates) {
-  const formattedPlaneCoordinates = formatCoordinates(planeCoordinates)
-  const formattedYachtCoordinates = formatCoordinates(yachtCoordinates)
-
-  createMarkers(formattedPlaneCoordinates)
-  createMarkers(formattedYachtCoordinates, false)
-
+export function setMarkers (coordinates, isPlane) {
+  const formattedCoordinates = coordinates.map(formatCoordinates)
+  formattedCoordinates.forEach((coordinate, index) => {
+    createMarkers(coordinate, coordinates[index], isPlane)
+  })
+  
   map.fitBounds(bounds)
 }
 

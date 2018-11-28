@@ -95,6 +95,7 @@ header img {
 .plane img,
 .plane svg {
   display: block;
+  max-width: 375px;
 }
 
 .yacht p,
@@ -253,6 +254,21 @@ footer img {
   padding: 10px 15px;
 }
 
+.articles {
+  margin-top: 60px;
+}
+
+.articles h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.articles a {
+  display: block;
+  color: #0a5e82;
+  padding-top: 10px;
+}
+
 @media (max-width: 1000px) {
   body {
     padding: 15px 0;
@@ -307,10 +323,32 @@ footer img {
   .date-select img {
     width: 30px;
   }
+
+  .datepicker-button-container {
+    position: static;
+    width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
-  .datepicker {
-    margin-left: 50px;
+  .img-container {
+    height: 200px;
+  }
+
+  .datepicker-modal {
+    top: 5px;
+    left: auto;
+    width: 95%;
+    height: 425px;
+  }
+
+  .datepicker-inline {
+    top: 115px;
+    right: calc(50% - 123px);
+  }
+
+  .datepicker-input:last-of-type {
+    position: absolute;
+    bottom: 5px;
   }
 }

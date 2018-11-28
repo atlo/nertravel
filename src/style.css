@@ -204,20 +204,52 @@ footer img {
   top: 25%;
   left: calc(50% - 300px);
   width: 600px;
+  height: 300px;
   background: white;
-  text-align: center;
   padding: 20px;
+  text-align-last: left;
 }
 
 .datepicker-modal p {
   padding-top: 0;
 }
 
+.datepicker-inline {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+}
+
+.datepicker-input-to .datepicker-inline {
+  z-index: 1;
+}
+
+.datepicker-input {
+  width: 250px;
+  margin-bottom: 15px;
+}
+
+.datepicker-input:last-of-type {
+  text-align: center;
+}
+
+.datepicker-input label {
+  display: inline-block;
+  width: 50px;
+  font-family: 'PT Serif', serif;
+}
+
+.datepicker-input input {
+  padding: 5px;
+}
+
 .datepicker-search {
   margin-top: 15px;
   border: 0;
-  background: #FF931E;
-
+  background: #5cc4ef;
+  border-radius: 5px;
+  color: white;
   padding: 10px 15px;
 }
 

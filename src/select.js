@@ -19,6 +19,8 @@ const datepickerSearchButton = document.querySelector('.datepicker-search')
 
 datepickerButton.innerHTML = today
 
+const datePickerFromInput = document.querySelector('.datepicker-from')
+const datePickerToInput = document.querySelector('.datepicker-to')
 const datepickerFrom = $('.datepicker-from')
 const datepickerTo = $('.datepicker-to')
 
@@ -127,7 +129,7 @@ datepickerFrom.datepicker({
   language: 'hu',
   inline: true,
   onSelect (df) {
-    dateFrom = df + '.'
+    dateFrom = format(datePickerFromInput.value, dateFormat)
   }
 })
 
@@ -138,10 +140,27 @@ datepickerTo.datepicker({
   language: 'hu',
   inline: true,
   onSelect (df) {
-    dateTo = df + '.'
+    dateTo = format(datePickerToInput.value, dateFormat)
   }
 })
+
+const datepickerFromElement = document.querySelector('.datepicker-input-from .datepicker-inline')
+const datepickerToElement = document.querySelector('.datepicker-input-to .datepicker-inline')
+
+function showDatepickerFrom () {
+  console.log('showDatepickerFrom')
+  datepickerFromElement.style.zIndex = 2
+  datepickerToElement.style.zIndex = 1
+}
+
+function showDatepickerTo () {
+  console.log('showDatepickerTo')
+  datepickerFromElement.style.zIndex = 1
+  datepickerToElement.style.zIndex = 2
+}
 
 datepickerButton.addEventListener('click', openModal)
 modalBackground.addEventListener('click', closeModal)
 datepickerSearchButton.addEventListener('click', search)
+datePickerFromInput.addEventListener('focus', showDatepickerFrom)
+datePickerToInput.addEventListener('focus', showDatepickerTo)

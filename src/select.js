@@ -45,9 +45,9 @@ function search () {
 
 function updateDates () {
   if (dateFrom && dateTo) {
-    datepickerButton.innerHTML = `${dateFrom} - ${dateTo}`
+    datepickerButton.innerHTML = `${format(dateFrom, dateFormat)} - ${format(dateTo, dateFormat)}`
   } else {
-    datepickerButton.innerHTML = dateFrom
+    datepickerButton.innerHTML = format(dateFrom, dateFormat)
   }
 }
 
@@ -123,24 +123,24 @@ planeLocationEl.innerHTML = formatCities(window.lastPlaneLocation.location)
 yachtLocationEl.innerHTML = formatCities(window.lastYachtLocation.location)
 
 datepickerFrom.datepicker({
-  dateFormat: 'yyyy.mm.dd',
+  dateFormat: 'yyyy-mm-dd',
   minDate: yachtStartDate,
   maxDate: endDate,
   language: 'hu',
   inline: true,
   onSelect (df) {
-    dateFrom = format(datePickerFromInput.value, dateFormat)
+    dateFrom = datePickerFromInput.value
   }
 })
 
 datepickerTo.datepicker({
-  dateFormat: 'yyyy.mm.dd',
+  dateFormat: 'yyyy-mm-dd',
   minDate: yachtStartDate,
   maxDate: endDate,
   language: 'hu',
   inline: true,
   onSelect (df) {
-    dateTo = format(datePickerToInput.value, dateFormat)
+    dateTo = datePickerToInput.value
   }
 })
 

@@ -99,7 +99,7 @@ function createMarkers (coordinates, location, isPlane = true) {
   })
 }
 
-export function setMarkers (coordinates, isPlane) {
+export function setMarkers (coordinates, isPlane = true) {
   const formattedCoordinates = coordinates.map(formatCoordinates)
   formattedCoordinates.forEach((coordinate, index) => {
     createMarkers(coordinate, coordinates[index], isPlane)

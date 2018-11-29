@@ -16,6 +16,7 @@ const datepickerButton = document.querySelector('.datepicker-modal-button')
 const datepickerModal = document.querySelector('.datepicker-modal')
 const modalBackground = document.querySelector('.modal-background')
 const datepickerSearchButton = document.querySelector('.datepicker-search')
+const loader = document.querySelector('.loader')
 
 datepickerButton.innerHTML = today
 
@@ -28,13 +29,13 @@ let dateFrom = format(endDate, dateFormat)
 let dateTo = ''
 
 function openModal () {
-  modalBackground.style.display = 'block'
-  datepickerModal.style.display = 'block'
+  modalBackground.classList.add('show')
+  datepickerModal.classList.add('show')
 }
 
 function closeModal () {
-  modalBackground.style.display = 'none'
-  datepickerModal.style.display = 'none'
+  modalBackground.classList.remove('show')
+  datepickerModal.classList.remove('show')
 }
 
 function search () {
@@ -44,7 +45,12 @@ function search () {
 }
 
 function updateDates () {
-  if (dateFrom && dateTo) {
+  dateTo = datePickerToInput.value
+  dateFrom = datePickerFromInput.value
+
+  if (!dateFrom) {
+    closeModal()
+  } else if (dateFrom && dateTo) {
     datepickerButton.innerHTML = `${format(dateFrom, dateFormat)} - ${format(dateTo, dateFormat)}`
   } else {
     datepickerButton.innerHTML = format(dateFrom, dateFormat)
@@ -126,6 +132,7 @@ datepickerFrom.datepicker({
   dateFormat: 'yyyy-mm-dd',
   minDate: yachtStartDate,
   maxDate: endDate,
+  startDate: yachtStartDate,
   language: 'hu',
   inline: true,
   onSelect (df) {
@@ -137,6 +144,7 @@ datepickerTo.datepicker({
   dateFormat: 'yyyy-mm-dd',
   minDate: yachtStartDate,
   maxDate: endDate,
+  startDate: new Date(),
   language: 'hu',
   inline: true,
   onSelect (df) {

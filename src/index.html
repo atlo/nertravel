@@ -82,7 +82,7 @@
   <div id="map"></div>
   <div class="container">
     <div class="articles">
-      <h2>Cikkek</h2>
+      <h2>Kapcsolódó cikkek</h2>
       <a href="https://blog.atlatszo.hu/2018/11/nem-indul-vagyonnyilatkozati-eljaras-orban-viktor-ellen-a-luxusrepulozes-miatt/" target="_blank" rel="noopener">Nem indul vagyonnyilatkozati eljárás Orbán Viktor ellen a luxusrepülőzés miatt</a>
       <a href="https://blog.atlatszo.hu/2018/11/tegnap-belgradban-jart-az-orban-altal-is-hasznalt-osztrak-maganrepulogep/" target="_blank" rel="noopener">Tegnap Belgrádban járt az Orbán által is használt osztrák magánrepülőgép</a>
       <a href="https://atlatszo.hu/2018/10/30/titkoljak-hogy-legutobb-mivel-ment-orban-meccset-nezni-de-nekunk-van-egy-tippunk/" target="_blank" rel="noopener">Titkolják, hogy legutóbb mivel ment Orbán meccset nézni, de nekünk van egy tippünk</a>
@@ -96,6 +96,7 @@
     </div>
   </div>
   <div class="modal-background"></div>
+  <img class="loader" src="dist/<%= require('./images/loader.gif') %>" alt="loader gif">
   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA123YaP73NYnvT_V8FWGntzY7dsN-47Ek&callback=initMap"
   async defer></script>

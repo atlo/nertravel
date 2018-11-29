@@ -109,6 +109,7 @@ export function setMarkers (coordinates, isPlane) {
 }
 
 export function removeMarkers () {
+  bounds = new google.maps.LatLngBounds()
   markers.forEach(marker => marker.setMap(null))
   lines.forEach(line => line.setMap(null))
 }

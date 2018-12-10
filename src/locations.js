@@ -286,6 +286,12 @@ export const planeLocations = [
     location: 'Budapest,Belgrád,Budapest',
     latitude: '47.49833,44.787197,47.49833',
     longitude: '19.04083,20.457273,19.04083'
+  },
+  {
+    date: '2018.12.10.',
+    location: 'Budapest,Moszkva',
+    latitude: '47.49833,55.75583',
+    longitude: '19.04083,37.61778'
   }
 ]
 

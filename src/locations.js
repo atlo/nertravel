@@ -295,9 +295,9 @@ export const planeLocations = [
   },
   {
     date: '2018.12.11.',
-    location: 'Moszkva,Budapest,Köln',
-    latitude: '55.75583,47.49833,50.9384',
-    longitude: '37.61778,19.04083,6.96'
+    location: 'Moszkva,Budapest,Köln,Budapest',
+    latitude: '55.75583,47.49833,50.9384,47.49833',
+    longitude: '37.61778,19.04083,6.96,19.04083'
   }
 ]
 

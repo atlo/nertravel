@@ -61,20 +61,23 @@ function formatCoordinates (coordinates) {
 function createMarkers (coordinates, location, type) {
   if (!coordinates) return
   
-  let icon, point, lineColor
+  let icon, point, lineColor, vehicleName
 
   if (type === 'yacht') {
     icon = yachtIcon
     point = yachtPoint
-    lineColor = '#f15a24'
+    lineColor = '#f15a24',
+    vehicleName = 'OE-LEM'
   } else if (type === 'plane') {
     icon = planeIcon
     point = planePoint
-    lineColor = '#1722b1'
+    lineColor = '#1722b1',
+    vehicleName = 'HA-LKZ'
   } else {
     icon = plane2Icon
     point = plane2Point
-    lineColor = '#039648'
+    lineColor = '#039648',
+    vehicleName = 'Lady Mrd'
   }
   
   coordinates.forEach(function(coordinate, index) {
@@ -83,17 +86,23 @@ function createMarkers (coordinates, location, type) {
     bounds.extend(coordinate)
 
     if (index === coordinates.length - 1) {
-      markers.push(new google.maps.Marker({
+      const marker = new google.maps.Marker({
         map,
         icon: `${window.location}/dist/${icon}`,
         position: coordinate
-      }))
+      })
+
+      createTooltip(marker, vehicleName)
+      markers.push(marker)
     } else if (index === 0) {
-      markers.push(new google.maps.Marker({
+      const marker = new google.maps.Marker({
         map,
         icon: `${window.location}/dist/${point}`,
         position: coordinate
-      }))
+      })
+
+      createTooltip(marker, vehicleName)
+      markers.push(marker)
     }
   })
 
@@ -106,16 +115,20 @@ function createMarkers (coordinates, location, type) {
   })
 
   lines.push(line)
-  
+
+  createTooltip(line, location.date)
+}
+
+function createTooltip (element, text) {
   const infoWindow = new google.maps.InfoWindow()
 
-  google.maps.event.addListener(line, 'mouseover', function(event) {
+  google.maps.event.addListener(element, 'mouseover', function(event) {
     infoWindow.setPosition(event.latLng)
-    infoWindow.setContent(location.date)
+    infoWindow.setContent(text)
     infoWindow.open(map)
   })
   
-  google.maps.event.addListener(line, 'mouseout', function() {
+  google.maps.event.addListener(element, 'mouseout', function() {
     infoWindow.close()
   })
 }

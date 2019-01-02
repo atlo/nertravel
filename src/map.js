@@ -1,7 +1,9 @@
 import yachtIcon from './images/jacht_ikon.svg'
 import planeIcon from './images/repulo_ikon.svg'
+import plane2Icon from './images/repulo2_ikon.svg'
 import yachtPoint from './images/jacht_pont.svg'
 import planePoint from './images/repulo_pont.svg'
+import plane2Point from './images/repulo2_pont.svg'
 
 const markers = []
 const lines = []
@@ -37,11 +39,14 @@ export function initMap() {
   bounds = new google.maps.LatLngBounds()
   map.fitBounds(bounds)
 
-  setMarkers([window.lastPlaneLocation], true)
-  setMarkers([window.lastYachtLocation], false)
+  setMarkers([window.lastPlaneLocation], 'plane')
+  setMarkers([window.lastPlaneLocation2], 'plane2')
+  setMarkers([window.lastYachtLocation], 'yacht')
 }
 
 function formatCoordinates (coordinates) {
+  if (!coordinates) return
+
   const latitudes = coordinates.latitude.split(',')
   const longitudes = coordinates.longitude.split(',')
   
@@ -53,12 +58,28 @@ function formatCoordinates (coordinates) {
   })
 }
 
-function createMarkers (coordinates, location, isPlane = true) {
-  const icon = isPlane ? planeIcon : yachtIcon
-  const point = isPlane ? planePoint : yachtPoint
-  const lineColor = isPlane ? '#1722b1' : '#f15a24'
+function createMarkers (coordinates, location, type) {
+  if (!coordinates) return
+  
+  let icon, point, lineColor
+
+  if (type === 'yacht') {
+    icon = yachtIcon
+    point = yachtPoint
+    lineColor = '#f15a24'
+  } else if (type === 'plane') {
+    icon = planeIcon
+    point = planePoint
+    lineColor = '#1722b1'
+  } else {
+    icon = plane2Icon
+    point = plane2Point
+    lineColor = '#039648'
+  }
   
   coordinates.forEach(function(coordinate, index) {
+    if (!coordinate) return
+
     bounds.extend(coordinate)
 
     if (index === coordinates.length - 1) {
@@ -99,10 +120,10 @@ function createMarkers (coordinates, location, isPlane = true) {
   })
 }
 
-export function setMarkers (coordinates, isPlane) {
+export function setMarkers (coordinates, type) {
   const formattedCoordinates = coordinates.map(formatCoordinates)
   formattedCoordinates.forEach((coordinate, index) => {
-    createMarkers(coordinate, coordinates[index], isPlane)
+    createMarkers(coordinate, coordinates[index], type)
   })
   
   map.fitBounds(bounds)

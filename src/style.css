@@ -32,7 +32,7 @@ header img {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0;
 }
 
 
@@ -76,8 +76,9 @@ header img {
 }
 
 .inline > div {
-  width: calc(50% - 20px);
-  max-width: 540px;
+  width: calc(33.3333% - 20px);
+  max-width: 373.3333px;
+  padding: 0 20px;
 }
 
 .img-container {
@@ -90,20 +91,21 @@ header img {
   padding: 30px;
 }
 
-.yacht img,
-.yacht svg,
-.plane img,
-.plane svg {
+.vehicle img,
+.vehicle svg {
   display: block;
   max-width: 375px;
 }
 
-.yacht p,
-.plane p {
+.vehicle p {
   font-family: 'PT Serif', serif;
   font-size: 20px;
   font-weight: bold;
   padding-top: 30px;
+}
+
+.vehicle > p:first-of-type {
+  min-height: 70px;
 }
 
 .yacht {
@@ -116,9 +118,19 @@ header img {
   padding-right: 20px;
 }
 
+.plane2 {
+  background: url('./images/zold_paca.png') top center no-repeat;
+  padding-right: 20px;
+  border-left: 1px dashed black;
+  border-right: 1px dashed black;
+}
+
+
 p.highlighted {
   display: inline-block;
-  height: 37px;
+  min-height: 37px;
+  max-width: 300px;
+  margin-top: 10px;
   background: #e6e6e6;
   line-height: 27px;
   padding: 5px 10px;
@@ -151,7 +163,7 @@ p.highlighted {
 .datepicker-button-container {
   position: absolute;
   left: calc(50% - 128px);
-  bottom: 0;
+  bottom: 50px;
   width: 256px;
   text-align: center;
 }
@@ -316,6 +328,11 @@ footer img {
 
   .plane {
     padding-right: 0;
+  }
+
+  .plane2 {
+    border-left: 0;
+    border-right: 0;
   }
 
   .yacht {

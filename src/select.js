@@ -1,16 +1,18 @@
 import {format, eachDay} from 'date-fns'
 import 'air-datepicker'
 import '../node_modules/air-datepicker/dist/js/i18n/datepicker.hu'
-import {planeLocations, yachtLocations} from './locations'
+import {planeLocations, plane2Locations, yachtLocations} from './locations'
 import {setMarkers, removeMarkers} from './map'
 
 const planeStartDate = new Date('2018-03-30')
+const plane2StartDate = new Date('2017-12-14')
 const yachtStartDate = new Date('2018-02-04')
 const endDate = new Date()
 const dateFormat = 'YYYY.MM.DD.'
 const today = format(endDate, dateFormat)
 
 const planeLocationEl = document.querySelector('.plane .location')
+const plane2LocationEl = document.querySelector('.plane2 .location')
 const yachtLocationEl = document.querySelector('.yacht .location')
 const datepickerButton = document.querySelector('.datepicker-modal-button')
 const datepickerModal = document.querySelector('.datepicker-modal')
@@ -58,7 +60,7 @@ function updateDates () {
 }
 
 function lastListItem (location) {
-  return location.split(',').pop()
+  return location ? location.split(',').pop() : ''
 }
 
 function formatCities (location) {
@@ -98,6 +100,7 @@ function updateLocations () {
   let dates = []
   let yachtLocations = []
   let planeLocations = []
+  let plane2Locations = []
 
   if (dateFrom && dateTo) {
     dates = eachDay(dateFrom, dateTo)
@@ -107,12 +110,17 @@ function updateLocations () {
   
   yachtLocations = dates.map(date => findLocationsByDate(populatedYachtLocations, date))
   planeLocations = dates.map(date => findLocationsByDate(populatedPlaneLocations, date))
+  plane2Locations = dates.map(date => findLocationsByDate(populatedPlane2Locations, date))
+
   updateLocation(yachtLocationEl, yachtLocations[yachtLocations.length - 1])
   updateLocation(planeLocationEl, planeLocations[planeLocations.length - 1])
+  updateLocation(plane2LocationEl, plane2Locations[plane2Locations.length - 1])
 
   removeMarkers()
-  planeLocations.forEach(location => setMarkers(location, true))
-  yachtLocations.forEach(location => setMarkers(location, false))
+
+  planeLocations.forEach(location => setMarkers(location, 'plane'))
+  plane2Locations.forEach(location => setMarkers(location, 'plane2'))
+  yachtLocations.forEach(location => setMarkers(location, 'yacht'))
 }
 
 function updateLocation (locationElement, location) {
@@ -121,18 +129,22 @@ function updateLocation (locationElement, location) {
 }
 
 const populatedPlaneLocations = populateLocations(planeStartDate, planeLocations)
+const populatedPlane2Locations = populateLocations(plane2StartDate, plane2Locations)
 const populatedYachtLocations = populateLocations(yachtStartDate, yachtLocations)
+
 window.lastPlaneLocation = populatedPlaneLocations[populatedPlaneLocations.length - 1]
+window.lastPlane2Location = populatedPlane2Locations[populatedPlane2Locations.length - 1]
 window.lastYachtLocation = populatedYachtLocations[populatedYachtLocations.length - 1]
 
 planeLocationEl.innerHTML = formatCities(window.lastPlaneLocation.location)
+plane2LocationEl.innerHTML = formatCities(window.lastPlane2Location.location)
 yachtLocationEl.innerHTML = formatCities(window.lastYachtLocation.location)
 
 datepickerFrom.datepicker({
   dateFormat: 'yyyy-mm-dd',
-  minDate: yachtStartDate,
+  minDate: plane2StartDate,
   maxDate: endDate,
-  startDate: yachtStartDate,
+  startDate: plane2StartDate,
   language: 'hu',
   inline: true,
   onSelect (df) {
@@ -142,7 +154,7 @@ datepickerFrom.datepicker({
 
 datepickerTo.datepicker({
   dateFormat: 'yyyy-mm-dd',
-  minDate: yachtStartDate,
+  minDate: plane2StartDate,
   maxDate: endDate,
   startDate: new Date(),
   language: 'hu',

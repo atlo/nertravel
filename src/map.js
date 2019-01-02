@@ -128,9 +128,9 @@ function createTooltip (element, text) {
     infoWindow.open(map)
   })
   
-  google.maps.event.addListener(element, 'mouseout', function() {
+  /* google.maps.event.addListener(element, 'mouseout', function() {
     infoWindow.close()
-  })
+  }) */
 }
 
 export function setMarkers (coordinates, type) {

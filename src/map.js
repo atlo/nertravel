@@ -40,7 +40,7 @@ export function initMap() {
   map.fitBounds(bounds)
 
   setMarkers([window.lastPlaneLocation], 'plane')
-  setMarkers([window.lastPlaneLocation2], 'plane2')
+  setMarkers([window.lastPlane2Location], 'plane2')
   setMarkers([window.lastYachtLocation], 'yacht')
 }
 

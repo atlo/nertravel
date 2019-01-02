@@ -304,21 +304,12 @@ export const planeLocations = [
     location: 'Budapest,Prága,Budapest',
     latitude: '47.49833,50.08861,47.49833',
     longitude: '19.04083,14.42139,19.04083'
-  }
-]
-
-export const plane2Locations = [
-  {
-    date: '2018.12.10.',
-    location: 'Moszkva,Budapest,Köln,Budapest',
-    latitude: '55.75583,47.49833,50.9384,47.49833',
-    longitude: '37.61778,19.04083,6.96,19.04083'
   },
   {
-    date: '2018.12.11.',
-    location: 'Budapest,Moszkva',
-    latitude: '47.49833,55.75583',
-    longitude: '19.04083,37.61778'
+    date: '2018.12.28.',
+    location: 'Budapest,Sharjah',
+    latitude: '47.49833,25.322327',
+    longitude: '19.04083,55.513641'
   }
 ]
 

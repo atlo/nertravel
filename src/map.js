@@ -92,7 +92,6 @@ function createMarkers (coordinates, location, type) {
         position: coordinate
       })
 
-      createTooltip(marker, vehicleName)
       markers.push(marker)
     } else if (index === 0) {
       const marker = new google.maps.Marker({
@@ -100,8 +99,7 @@ function createMarkers (coordinates, location, type) {
         icon: `${window.location}/dist/${point}`,
         position: coordinate
       })
-
-      createTooltip(marker, vehicleName)
+      
       markers.push(marker)
     }
   })
@@ -128,9 +126,9 @@ function createTooltip (element, text) {
     infoWindow.open(map)
   })
   
-  /* google.maps.event.addListener(element, 'mouseout', function() {
+  google.maps.event.addListener(element, 'mouseout', function() {
     infoWindow.close()
-  }) */
+  })
 }
 
 export function setMarkers (coordinates, type) {

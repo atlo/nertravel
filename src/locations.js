@@ -310,6 +310,12 @@ export const planeLocations = [
     location: 'Budapest,Sharjah',
     latitude: '47.49833,25.322327',
     longitude: '19.04083,55.513641'
+  },
+  {
+    date: '2019.01.03.',
+    location: 'Sharjah,Budapest',
+    latitude: '25.322327,47.49833',
+    longitude: '55.513641,19.04083'
   }
 ]
 export const plane2Locations = [

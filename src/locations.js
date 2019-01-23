@@ -324,7 +324,7 @@ export const planeLocations = [
     longitude: '19.04083,-4.412525'
   },
   {
-    date: '2018.01.22.',
+    date: '2019.01.22.',
     location: 'Malaga,Budapest',
     latitude: '36.720476,47.49833',
     longitude: '-4.412525,19.04083'
@@ -1136,7 +1136,7 @@ export const plane2Locations = [
     longitude: '19.040235,23.3218675,19.040235'
   },
   {
-    date: '2019.08.23.',
+    date: '2019.01.23.',
     location: 'Budapest,Podgorica',
     latitude: '47.497912,42.4304196',
     longitude: '19.040235,19.2593642'

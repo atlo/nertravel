@@ -316,6 +316,18 @@ export const planeLocations = [
     location: 'Sharjah,Budapest',
     latitude: '25.322327,47.49833',
     longitude: '55.513641,19.04083'
+  },
+  {
+    date: '2019.01.21.',
+    location: 'Budapest,Malaga',
+    latitude: '47.49833,36.720476',
+    longitude: '19.04083,-4.412525'
+  },
+  {
+    date: '2018.01.22.',
+    location: 'Malaga,Budapest',
+    latitude: '36.720476,47.49833',
+    longitude: '-4.412525,19.04083'
   }
 ]
 export const plane2Locations = [
@@ -1116,6 +1128,18 @@ export const plane2Locations = [
     location: 'Budapest,Szófia,Budapest',
     latitude: '47.497912,42.6977082,47.497912',
     longitude: '19.040235,23.3218675,19.040235'
+  },
+  {
+    date: '2019.01.22.',
+    location: 'Budapest,Szófia,Budapest',
+    latitude: '47.497912,42.6977082,47.497912',
+    longitude: '19.040235,23.3218675,19.040235'
+  },
+  {
+    date: '2019.08.23.',
+    location: 'Budapest,Podgorica',
+    latitude: '47.497912,42.4304196',
+    longitude: '19.040235,19.2593642'
   }
 ]
 

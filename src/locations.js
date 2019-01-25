@@ -340,7 +340,7 @@ export const planeLocations = [
     location: 'Pula,Budapest',
     latitude: '44.866623,47.49833',
     longitude: '13.849579,19.04083'
-  },19.04083
+  }
 ]
 export const plane2Locations = [
   {

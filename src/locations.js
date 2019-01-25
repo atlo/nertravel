@@ -328,7 +328,19 @@ export const planeLocations = [
     location: 'Malaga,Budapest',
     latitude: '36.720476,47.49833',
     longitude: '-4.412525,19.04083'
-  }
+  },
+  {
+    date: '2019.01.23.',
+    location: 'Malaga,Pula',
+    latitude: '36.720476,44.866623',
+    longitude: '-4.412525,13.849579'
+  },
+  {
+    date: '2019.01.24.',
+    location: 'Pula,Budapest',
+    latitude: '44.866623,47.49833',
+    longitude: '13.849579,19.04083'
+  },19.04083
 ]
 export const plane2Locations = [
   {
@@ -1137,9 +1149,15 @@ export const plane2Locations = [
   },
   {
     date: '2019.01.23.',
-    location: 'Budapest,Podgorica',
-    latitude: '47.497912,42.4304196',
-    longitude: '19.040235,19.2593642'
+    location: 'Budapest,Podgorica,Tirana,Podgorica,Budapest',
+    latitude: '47.497912,42.4304196,41.327953,42.4304196,47.497912',
+    longitude: '19.040235,19.2593642,19.819025,19.2593642,19.040235'
+  },
+  {
+    date: '2019.01.24.',
+    location: 'Budapest,Marosvásárhely,Budapest',
+    latitude: '47.497912,46.545556,47.497912',
+    longitude: '19.040235,24.5625,19.040235'
   }
 ]
 

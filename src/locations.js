@@ -352,6 +352,30 @@ export const planeLocations = [
     location: 'Budapest,Bécs',
     latitude: '47.497912,48.2081743',
     longitude: '19.040235,16.3738189'
+  },
+  {
+    date: '2019.02.07.',
+    location: 'Moszkva,Budapest,Róma,Budapest',
+    latitude: '55.755826,47.497912,41.8919300,47.497912',
+    longitude: '37.6172999,19.040235,12.5113300,19.040235'
+  },
+  {
+    date: '2019.02.08.',
+    location: 'Budapest,Barcelona',
+    latitude: '47.497912,41.390205',
+    longitude: '19.040235,2.154007'
+  },
+  {
+    date: '2019.02.09.',
+    location: 'Barcelona,Budapest',
+    latitude: '41.390205,47.497912',
+    longitude: '2.154007,19.040235'
+  },
+  {
+    date: '2019.02.11.',
+    location: 'Budapest,Prága,Budapest',
+    latitude: '47.49833,50.08861,47.49833',
+    longitude: '19.04083,14.42139,19.04083'
   }
 ]
 

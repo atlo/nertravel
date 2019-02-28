@@ -362,14 +362,14 @@ export const planeLocations = [
   {
     date: '2019.02.16.',
     location: 'Budapest,Maldív-szigetek',
-    latitude: '47.497912,73.50888',
-    longitude: '19.040235,4.1748'
+    latitude: '47.497912,46.352501',
+    longitude: '19.040235,10.913910'
   },
   {
     date: '2019.02.26.',
     location: 'Maldív-szigetek,Budapest',
-    latitude: '73.50888,47.497912',
-    longitude: '4.1748,19.040235'
+    latitude: '46.352501,47.497912',
+    longitude: '10.913910,19.040235'
   }
 ]
 

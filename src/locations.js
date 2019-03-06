@@ -376,6 +376,12 @@ export const planeLocations = [
     location: 'Budapest,Kittila',
     latitude: '47.497912,67.69861',
     longitude: '19.040235,24.84806'
+  },
+  {
+    date: '2019.03.04.',
+    location: 'Kittila,Budapest,Bécs',
+    latitude: '67.69861,47.497912,48.2081743',
+    longitude: '24.84806,19.040235,16.3738189'
   }
 ]
 
@@ -1289,6 +1295,12 @@ export const plane2Locations = [
     location: 'Moszkva,Budapest',
     latitude: '55.75583,47.49833',
     longitude: '37.61778,19.04083'
+  },
+  {
+    date: '2019.03.05.',
+    location: 'Budapest,Kisinyov,Podgrocia,Budapest',
+    latitude: '47.497912,47.0104529,42.442574,47.497912',
+    longitude: '19.040235,28.8638102,19.268646,19.040235'
   }
 ]
 

@@ -394,6 +394,18 @@ export const planeLocations = [
     location: 'Marosvásárhely,Budapest',
     latitude: '46.545556,47.497912',
     longitude: '24.5625,19.040235'
+  },
+  {
+    date: '2019.03.18.',
+    location: 'Budapest,Moszkva',
+    latitude: '47.49833,55.75583',
+    longitude: '19.04083,37.61778'
+  },
+  {
+    date: '2019.03.19.',
+    location: 'Moszkva,Budapest',
+    latitude: '55.75583,47.49833',
+    longitude: '37.61778,19.04083'
   }
 ]
 
@@ -1325,6 +1337,12 @@ export const plane2Locations = [
     location: 'Miami,Bangor,Budapest',
     latitude: '25.7742700,44.808147,47.497912',
     longitude: '-80.1936600,-68.795013,19.040235'
+  },
+  {
+    date: '2019.03.19.',
+    location: 'Budapest,Genf',
+    latitude: '47.497912,46.2043907',
+    longitude: '19.040235,6.1431577'
   }
 ]
 

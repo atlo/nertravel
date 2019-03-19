@@ -382,6 +382,18 @@ export const planeLocations = [
     location: 'Kittila,Budapest,Bécs',
     latitude: '67.69861,47.497912,48.2081743',
     longitude: '24.84806,19.040235,16.3738189'
+  },
+  {
+    date: '2019.03.14.',
+    location: 'Bécs,Budapest,Marosvásárhely',
+    latitude: '48.2081743,47.497912,46.545556',
+    longitude: '16.3738189,19.040235,24.5625'
+  },
+  {
+    date: '2019.03.17.',
+    location: 'Marosvásárhely,Budapest',
+    latitude: '46.545556,47.497912',
+    longitude: '24.5625,19.040235'
   }
 ]
 
@@ -1301,6 +1313,18 @@ export const plane2Locations = [
     location: 'Budapest,Kisinyov,Podgrocia,Budapest',
     latitude: '47.497912,47.0104529,42.442574,47.497912',
     longitude: '19.040235,28.8638102,19.268646,19.040235'
+  },
+  {
+    date: '2019.03.14.',
+    location: 'Budapest,Miami',
+    latitude: '47.497912,25.7742700',
+    longitude: '19.040235,-80.1936600'
+  },
+  {
+    date: '2019.03.16.',
+    location: 'Miami,Bangor,Budapest',
+    latitude: '25.7742700,44.808147,47.497912',
+    longitude: '-80.1936600,-68.795013,19.040235'
   }
 ]
 
@@ -1718,5 +1742,11 @@ export const yachtLocations = [
     location: 'Cres,Mali Losinj,Rijeka',
     latitude: '44.8887967,44.5326988,45.326910',
     longitude: '14.1286654,14.466679,14.441000'
+  },
+  {
+    date: '2019.05.09.',
+    location: 'Rijeka,Trogir',
+    latitude: '45.326910,43.5125',
+    longitude: '14.441000,16.25167'
   }
 ]

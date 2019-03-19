@@ -1744,7 +1744,7 @@ export const yachtLocations = [
     longitude: '14.1286654,14.466679,14.441000'
   },
   {
-    date: '2019.05.09.',
+    date: '2019.03.09.',
     location: 'Rijeka,Trogir',
     latitude: '45.326910,43.5125',
     longitude: '14.441000,16.25167'

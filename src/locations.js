@@ -1352,15 +1352,15 @@ export const plane2Locations = [
   },
   {
     date: '2019.03.19.',
-    location: 'Budapest,Genf',
-    latitude: '47.497912,46.2043907',
-    longitude: '19.040235,6.1431577'
+    location: 'Budapest,Genf,Budapest',
+    latitude: '47.497912,46.2043907,47.497912',
+    longitude: '19.040235,6.1431577,19.040235'
   },
   {
     date: '2019.03.26.',
-    location: 'Budapest,Szófia,Budapest,Marosvásárhely,Szófia',
-    latitude: '47.497912,42.6977082,47.497912,46.545556,42.6977082',
-    longitude: '19.040235,23.3218675,19.040235,24.5625,23.3218675'
+    location: 'Budapest,Szófia,Budapest,Marosvásárhely,Szófia,Budapest',
+    latitude: '47.497912,42.6977082,47.497912,46.545556,42.6977082,47.497912',
+    longitude: '19.040235,23.3218675,19.040235,24.5625,23.3218675,19.040235'
   }
 ]
 

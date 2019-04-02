@@ -1361,6 +1361,16 @@ export const plane2Locations = [
     location: 'Budapest,Szófia,Budapest,Marosvásárhely,Szófia,Budapest',
     latitude: '47.497912,42.6977082,47.497912,46.545556,42.6977082,47.497912',
     longitude: '19.040235,23.3218675,19.040235,24.5625,23.3218675,19.040235'
+  }, {
+    date: '2019.03.27.',
+    location: 'Budapest,Bukarest,Budapest',
+    latitude: '47.497912,44.4267674,47.497912',
+    longitude: '19.040235,26.1025384,19.040235'
+  }, {
+    date: '2019.03.29.',
+    location: 'Budapest,Marosvásárhely,Budapest',
+    latitude: '47.497912,46.545556,47.497912',
+    longitude: '19.040235,24.5625,19.040235'
   }
 ]
 

@@ -1393,6 +1393,22 @@ export const plane2Locations = [
     location: 'Budapest,Bukarest,Budapest',
     latitude: '47.497912,44.4267674,47.497912',
     longitude: '19.040235,26.1025384,19.040235'
+  }, {
+    date: '2019.04.09.',
+    location: 'Budapest,Liverpool',
+    latitude: '47.497912,53.41058',
+    longitude: '19.040235,-2.97794'
+  }, {
+    date: '2019.04.10.',
+    location: 'Liverpool,Budapest',
+    latitude: '53.41058,47.497912',
+    longitude: '-2.97794,19.040235'
+  },
+  {
+    date: '2019.04.11.',
+    location: 'Budapest,Milánó',
+    latitude: '47.49833,45.46416',
+    longitude: '19.04083,9.19034'
   }
 ]
 

@@ -430,6 +430,30 @@ export const planeLocations = [
     location: 'Budapest,Tirana,Budapest',
     latitude: '47.497912,41.327953,47.497912',
     longitude: '19.040235,19.819025,19.040235'
+  },
+  {
+    date: '2019.05.06.',
+    location: 'Budapest,Zürich',
+    latitude: '47.49833,47.3686498',
+    longitude: '19.04083,8.5391825'
+  },
+  {
+    date: '2019.05.07.',
+    location: 'Zürich,Budapest',
+    latitude: '47.3686498,47.49833',
+    longitude: '8.5391825,19.04083'
+  },
+  {
+    date: '2019.05.08.',
+    location: 'Budapest,Bordeaux,Budapest',
+    latitude: '47.497912,44.8404400,47.497912',
+    longitude: '19.040235,-0.5805000,19.040235'
+  },
+  {
+    date: '2019.05.10.',
+    location: 'Budapest,Bordeaux,Budapest',
+    latitude: '47.497912,44.8404400,47.497912',
+    longitude: '19.040235,-0.5805000,19.040235'
   }
 ]
 
@@ -1409,6 +1433,108 @@ export const plane2Locations = [
     location: 'Budapest,Milánó',
     latitude: '47.49833,45.46416',
     longitude: '19.04083,9.19034'
+  },
+  {
+    date: '2019.04.12.',
+    location: 'Milánó,Budapest',
+    latitude: '45.46416,47.49833',
+    longitude: '9.19034,19.04083'
+  },
+  {
+    date: '2019.04.15',
+    location: 'Budapest,Szófia,Budapest',
+    latitude: '47.497912,42.6977082,47.497912',
+    longitude: '19.040235,23.3218675,19.040235'
+  },
+  {
+    date: '2019.04.16.',
+    location: 'Budapest,Barcelona',
+    latitude: '47.497912,41.390205',
+    longitude: '19.040235,2.154007'
+  },
+  {
+    date: '2019.04.17.',
+    location: 'Barcelona,Budapest',
+    latitude: '41.390205,47.497912',
+    longitude: '2.154007,19.040235'
+  },
+  {
+    date: '2019.04.18.',
+    location: 'Budapest,Moszkva,Budapest',
+    latitude: '47.49833,55.75583,47.49833',
+    longitude: '19.04083,37.61778,19.04083'
+  },
+  {
+    date: '2019.04.24.',
+    location: 'Budapest,Podgorica,Budapest',
+    latitude: '47.497912,42.4304196,47.497912',
+    longitude: '19.040235,19.2593642,19.040235'
+  },
+  {
+    date: '2019.04.25.',
+    location: 'Budapest,Podgorica,Skopje,Budapest',
+    latitude: '47.497912,42.4304196,41.9960421,47.497912',
+    longitude: '19.040235,19.2593642,21.431647,19.040235'
+  },
+  {
+    date: '2019.05.02.',
+    location: 'Budapest,Genf,Budapest',
+    latitude: '47.497912,46.2043907,47.497912',
+    longitude: '19.040235,6.1431577,19.040235'
+  },
+  {
+    date: '2019.05.06.',
+    location: 'Budapest,Kisinyov,Budapest',
+    latitude: '47.497912,47.0104529,47.497912',
+    longitude: '19.040235,28.8638102,19.040235'
+  },
+  {
+    date: '2019.05.08.',
+    location: 'Budapest,Genf,Budapest',
+    latitude: '47.497912,46.2043907,47.497912',
+    longitude: '19.040235,6.1431577,19.040235'
+  },
+  {
+    date: '2019.05.09.',
+    location: 'Budapest,Tirana,Budapest',
+    latitude: '47.497912,41.327953,47.497912',
+    longitude: '19.040235,19.819025,19.040235'
+  },
+  {
+    date: '2019.05.12.',
+    location: 'Budapest,Párizs',
+    latitude: '47.49833,48.864716',
+    longitude: '19.04083,2.349014'
+  },
+  {
+    date: '2019.05.16.',
+    location: 'Párizs,Budapest',
+    latitude: '48.864716,47.49833',
+    longitude: '2.349014,19.04083'
+  },
+  {
+    date: '2019.05.20.',
+    location: 'Budapest,Szófia,Budapest',
+    latitude: '47.497912,42.6977082,47.497912',
+    longitude: '19.040235,23.3218675,19.040235'
+  },
+  {
+    date: '2019.05.21.',
+    location: 'Budapest,Genf,Budapest',
+    latitude: '47.497912,46.2043907,47.497912',
+    longitude: '19.040235,6.1431577,19.040235'
+  },
+  {
+    date: '2019.05.22.',
+    location: 'Budapest,Split,Budapest',
+    latitude: '47.497912,43.5081323,47.497912',
+    longitude: '19.040235,16.4401935,19.040235'
+  },
+  {
+    date: '2019.05.23.',
+    location: 'Budapest,Rejkjavik',
+    latitude: '47.49833,64.12652059999999',
+    longitude: '19.04083,-21.817439299999933'
   }
 ]
 
@@ -1832,5 +1958,17 @@ export const yachtLocations = [
     location: 'Rijeka,Trogir',
     latitude: '45.326910,43.5125',
     longitude: '14.441000,16.25167'
+  },
+  {
+    date: '2019.05.23.',
+    location: 'Trogir,Dubrovnik',
+    latitude: '43.50710,42.6402842',
+    longitude: '16.24645,18.10833'
+  },
+  {
+    date: '2019.05.24.',
+    location: 'Dubrovnik,Tivat',
+    latitude: '42.6402842.434982',
+    longitude: '18.10833,18.706640'
   }
 ]

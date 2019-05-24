@@ -1968,7 +1968,7 @@ export const yachtLocations = [
   {
     date: '2019.05.24.',
     location: 'Dubrovnik,Tivat',
-    latitude: '42.6402842.434982',
+    latitude: '42.64028,42.434982',
     longitude: '18.10833,18.706640'
   }
 ]

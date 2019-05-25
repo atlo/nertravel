@@ -1441,7 +1441,7 @@ export const plane2Locations = [
     longitude: '9.19034,19.04083'
   },
   {
-    date: '2019.04.15',
+    date: '2019.04.15.',
     location: 'Budapest,Szófia,Budapest',
     latitude: '47.497912,42.6977082,47.497912',
     longitude: '19.040235,23.3218675,19.040235'
@@ -1967,8 +1967,8 @@ export const yachtLocations = [
   },
   {
     date: '2019.05.24.',
-    location: 'Dubrovnik,Tivat',
-    latitude: '42.64028,42.434982',
-    longitude: '18.10833,18.706640'
+    location: 'Dubrovnik,Tivat,Dubrovnik',
+    latitude: '42.64028,42.434982,42.64028',
+    longitude: '18.10833,18.706640,18.10833'
   }
 ]

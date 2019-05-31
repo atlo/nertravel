@@ -454,6 +454,12 @@ export const planeLocations = [
     location: 'Budapest,Bordeaux,Budapest',
     latitude: '47.497912,44.8404400,47.497912',
     longitude: '19.040235,-0.5805000,19.040235'
+  },
+  {
+    date: '2019.05.31.',
+    location: 'Budapest,Rijeka',
+    latitude: '47.49833,45.326910',
+    longitude: '19.04083,14.441000'
   }
 ]
 
@@ -1535,6 +1541,24 @@ export const plane2Locations = [
     location: 'Budapest,Rejkjavik',
     latitude: '47.49833,64.12652059999999',
     longitude: '19.04083,-21.817439299999933'
+  },
+  {
+    date: '2019.05.25.',
+    location: 'Rejkjavik,Budapest',
+    latitude: '64.12652059999999,47.49833',
+    longitude: '-21.817439299999933,19.04083'
+  },
+  {
+    date: '2019.05.28.',
+    location: 'Budapest,Baku,Budapest',
+    latitude: '47.497912,40.37767,47.497912',
+    longitude: '19.040235,49.89201,19.040235'
+  },
+  {
+    date: '2019.05.31.',
+    location: 'Budapest,Madrid,Budapest',
+    latitude: '47.497912,40.4167754,47.497912',
+    longitude: '19.040235,-3.7037902,19.040235'
   }
 ]
 
@@ -1970,5 +1994,10 @@ export const yachtLocations = [
     location: 'Dubrovnik,Tivat,Dubrovnik',
     latitude: '42.64028,42.434982,42.64028',
     longitude: '18.10833,18.706640,18.10833'
+  }, {
+    date: '2019.05.25.',
+    location: 'Dubrovnik,Rijeka',
+    latitude: '42.64028,45.326910',
+    longitude: '18.10833,14.441000'
   }
 ]

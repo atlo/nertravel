@@ -457,9 +457,9 @@ export const planeLocations = [
   },
   {
     date: '2019.05.31.',
-    location: 'Budapest,Rijeka',
-    latitude: '47.49833,45.326910',
-    longitude: '19.04083,14.441000'
+    location: 'Budapest,Rijeka,Budapest',
+    latitude: '47.49833,45.326910,47.49833',
+    longitude: '19.04083,14.441000,19.04083'
   }
 ]
 
@@ -1538,7 +1538,7 @@ export const plane2Locations = [
   },
   {
     date: '2019.05.23.',
-    location: 'Budapest,Rejkjavik',
+    location: 'Budapest,Rejkjavik', 
     latitude: '47.49833,64.12652059999999',
     longitude: '19.04083,-21.817439299999933'
   },

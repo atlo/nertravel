@@ -472,6 +472,24 @@ export const planeLocations = [
     location: 'Köln,Budapest',
     latitude: '50.9384,47.497912',
     longitude: '6.96,19.040235'
+  },
+  {
+    date: '2019.06.19.',
+    location: 'Budapest,Nizza,Pozsony,Budapest',
+    latitude: '47.497912,40.759987,48.1485965,47.497912',
+    longitude: '19.040235,-73.99123399999999,17.1077478,19.040235'
+  },
+  {
+    date: '2019.06.24.',
+    location: 'Budapest,Szentpétervár',
+    latitude: '47.497912,59.9342802',
+    longitude: '19.040235,30.3350986'
+  },
+  {
+    date: '2019.06.29.',
+    location: 'Budapest,Szentpétervár',
+    latitude: '47.497912,59.9342802',
+    longitude: '19.040235,30.3350986'
   }
 ]
 
@@ -1583,6 +1601,90 @@ export const plane2Locations = [
     location: 'Budapest,Párizs',
     latitude: '47.49833,48.864716',
     longitude: '19.04083,2.349014'
+  },
+  {
+    date: '2019.06.05.',
+    location: 'Párizs,Budapest',
+    latitude: '48.864716,47.49833',
+    longitude: '2.349014,19.04083'
+  },
+  {
+    date: '2019.06.06.',
+    location: 'Budapest,Podgorica,Tirana,Podgorica,Budapest',
+    latitude: '47.497912,42.4304196,41.327953,42.4304196,47.497912',
+    longitude: '19.040235,19.2593642,19.819025,19.2593642,19.040235'
+  },
+  {
+    date: '2019.06.08.',
+    location: 'Budapest,Baku',
+    latitude: '47.497912,40.37767',
+    longitude: '19.040235,49.89201'
+  },
+  {
+    date: '2019.06.09.',
+    location: 'Baku,Budapest,Porto',
+    latitude: '40.37767,47.497912,41.1579438',
+    longitude: '49.89201,19.040235,-8.6291053'
+  },
+  {
+    date: '2019.06.10.',
+    location: 'Porto,Budapest',
+    latitude: '41.1579438,47.497912',
+    longitude: '-8.6291053,19.040235'
+  },
+  {
+    date: '2019.06.13.',
+    location: 'Budapest,Szófia,Budapest',
+    latitude: '47.497912,42.6977082,47.497912',
+    longitude: '19.040235,23.3218675,19.040235'
+  },
+  {
+    date: '2019.06.17.',
+    location: 'Budapest,Szófia,Budapest',
+    latitude: '47.497912,42.6977082,47.497912',
+    longitude: '19.040235,23.3218675,19.040235'
+  },
+  {
+    date: '2019.06.19.',
+    location: 'Budapest,Milánó,Pozsony',
+    latitude: '47.49833,45.46416,48.1485965',
+    longitude: '19.04083,9.19034,17.1077478'
+  },
+  {
+    date: '2019.06.20.',
+    location: 'Pozsony,Budapest,London,Budapest',
+    latitude: '48.1485965,47.497912,51.509865,47.49833',
+    longitude: '17.1077478,19.040235,-0.118092,19.04083'
+  },
+  {
+    date: '2019.06.21.',
+    location: 'Budapest,Milánó,Budapest,Nizza,Budapest',
+    latitude: '47.49833,45.46416,47.49833,40.759987,47.497912',
+    longitude: '19.04083,9.19034,19.04083,-73.99123399999999,19.040235'
+  },
+  {
+    date: '2019.06.22.',
+    location: 'Budapest,Palma de Mallorca,Nizza',
+    latitude: '47.49833,39.571625,40.759987',
+    longitude: '19.04083,2.650544,-73.99123399999999'
+  },
+  {
+    date: '2019.06.23.',
+    location: 'Nizza,Budapest',
+    latitude: '40.759987,47.497912',
+    longitude: '-73.99123399999999,19.040235'
+  },
+  {
+    date: '2019.06.26.',
+    location: 'Budapest,Bukarest,Budapest',
+    latitude: '47.497912,44.4267674,47.497912',
+    longitude: '19.040235,26.1025384,19.040235'
+  },
+  {
+    date: '2019.06.30.',
+    location: 'Budapest,Palma de Mallorca,Budapest',
+    latitude: '47.49833,39.571625,47.49833',
+    longitude: '19.04083,2.650544,19.04083'
   }
 ]
 
@@ -2023,5 +2125,17 @@ export const yachtLocations = [
     location: 'Dubrovnik,Rijeka',
     latitude: '42.64028,45.326910',
     longitude: '18.10833,14.441000'
+  },
+  {
+    date: '2019.06.28.',
+    location: 'Rijeka,Opatija',
+    latitude: '45.326910,45.332550',
+    longitude: '14.441000,14.303090'
+  },
+  {
+    date: '2019.06.30.',
+    location: 'Rijeka,Cres',
+    latitude: '45.326910,44.8887967',
+    longitude: '14.441000,14.1286654'
   }
 ]

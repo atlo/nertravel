@@ -476,8 +476,8 @@ export const planeLocations = [
   {
     date: '2019.06.19.',
     location: 'Budapest,Nizza,Pozsony,Budapest',
-    latitude: '47.497912,40.759987,48.1485965,47.497912',
-    longitude: '19.040235,-73.99123399999999,17.1077478,19.040235'
+    latitude: '47.497912,44.77416,48.1485965,47.497912',
+    longitude: '19.040235,8.35784,17.1077478,19.040235'
   },
   {
     date: '2019.06.24.',
@@ -487,9 +487,9 @@ export const planeLocations = [
   },
   {
     date: '2019.06.29.',
-    location: 'Budapest,Szentpétervár',
-    latitude: '47.497912,59.9342802',
-    longitude: '19.040235,30.3350986'
+    location: 'Szentpétervár,Budapest',
+    latitude: '59.9342802,47.497912',
+    longitude: '30.3350986,19.040235'
   }
 ]
 
@@ -1031,14 +1031,14 @@ export const plane2Locations = [
   {
     date: '2018.08.29.',
     location: 'Budapest,Nizza',
-    latitude: '47.497912,40.759987',
-    longitude: '19.040235,-73.99123399999999'
+    latitude: '47.497912,44.77416',
+    longitude: '19.040235,8.35784'
   },
   {
     date: '2018.08.30.',
     location: 'Nizza,Budapest',
-    latitude: '40.759987,47.497912',
-    longitude: '-73.99123399999999,19.040235'
+    latitude: '44.77416,47.497912',
+    longitude: '8.35784,19.040235'
   },
   {
     date: '2018.09.05.',
@@ -1659,20 +1659,20 @@ export const plane2Locations = [
   {
     date: '2019.06.21.',
     location: 'Budapest,Milánó,Budapest,Nizza,Budapest',
-    latitude: '47.49833,45.46416,47.49833,40.759987,47.497912',
-    longitude: '19.04083,9.19034,19.04083,-73.99123399999999,19.040235'
+    latitude: '47.49833,45.46416,47.49833,44.77416,47.497912',
+    longitude: '19.04083,9.19034,19.04083,8.35784,19.040235'
   },
   {
     date: '2019.06.22.',
     location: 'Budapest,Palma de Mallorca,Nizza',
-    latitude: '47.49833,39.571625,40.759987',
-    longitude: '19.04083,2.650544,-73.99123399999999'
+    latitude: '47.49833,39.571625,44.77416',
+    longitude: '19.04083,2.650544,8.35784'
   },
   {
     date: '2019.06.23.',
     location: 'Nizza,Budapest',
-    latitude: '40.759987,47.497912',
-    longitude: '-73.99123399999999,19.040235'
+    latitude: '44.77416,47.497912',
+    longitude: '8.35784,19.040235'
   },
   {
     date: '2019.06.26.',
@@ -2134,7 +2134,7 @@ export const yachtLocations = [
   },
   {
     date: '2019.06.30.',
-    location: 'Rijeka,Cres',
+    location: 'Opatija,Cres',
     latitude: '45.326910,44.8887967',
     longitude: '14.441000,14.1286654'
   }
